@@ -20,7 +20,7 @@ func NewAggregatorGRPCServer(svc Aggregator) *GPRCAggregatorServer {
 // transport layer
 // JSON -> types.Distance -> all done (same type)
 // GRPC -> types.AggregateRequest -> type.Distance
-// Webpack => types.WEBpack -> types.Distance
+// Webpack => types.WEBPack -> types.Distance
 
 // business layer -> business layer type (main type everyone needs to convert to)
 

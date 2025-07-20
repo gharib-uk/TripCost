@@ -45,7 +45,7 @@ func makeGRPCTransport(listenAddr string, svc Aggregator) error {
 	}()
 	// Make a new GRPC native server with (options)
 	server := grpc.NewServer([]grpc.ServerOption{}...)
-	// Register GRPC server implementation to the GRPC package.
+	// Register (OUR) GRPC server implementation to the GRPC package.
 	types.RegisterAggregatorServer(server, NewAggregatorGRPCServer(svc))
 	return server.Serve(ln)
 }

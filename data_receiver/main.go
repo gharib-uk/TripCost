@@ -1,14 +1,14 @@
 package main
 
 import (
-	"TripCost/types"
 	"fmt"
-	_ "github.com/confluentinc/confluent-kafka-go/v2/kafka"
-	"github.com/gorilla/websocket"
 	"log"
 	"math"
 	"math/rand"
 	"net/http"
+
+	"TripCost/types"
+	"github.com/gorilla/websocket"
 )
 
 func main() {
